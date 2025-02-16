@@ -75,24 +75,46 @@ body {
 
     display: flex;
     justify-content: space-between;
-    
+    flex-direction: column;            /*se cambio a columna la posicion de los botones*/
+    align-items: center;               /*central al centro ya que se cambio a columna*/
+    gap: 32px;
 }
 
 .presentacion__enlaces__link{
     
-    width: 280px;                         /* anchura del botn */     
-    background-color: #22D4FD;       /*Cambiar el fondo del boton */
+    width: 378px;                         /* anchura del boton */     
+    /* background-color: #22D4FD;       /*Cambiar el fondo del boton - pero se quito por que los botones ahora no van a tener este color*/  
     text-align: center;                /* Alinear el texto en el boton */
     padding: 21.5px 0px;     /* colocar el valor del padding de los botones alto y ancho */
-    border-radius: 16px;     /* redondear boton*/
+    border-radius: 8px;     /* redondear boton*/
     font-family: "Montserrat", serif;   /* cambiar la fuente del texto */
     font-size: 24px;      /* tamaño de la fuente */
     font-weight: 600px;     /* monserrat peso 600 */
     text-decoration: none;   /* no decoraciones en el texto ________ */
-    color: #000000;
+    color: #f6f6f6;
+    border: 2px solid #22D4FD;
+    display: flex;                    /*para alinear el icono con el texto, este queda alineado pero a la izquierda */
+    justify-content: center;              /* ahora centrara el texto en el boton */
+    gap: 10px;                           /* para separar un poco el texto del boton */
+   /* padding-left: 250px             /* una prueba usando el padding centro el texto y el icono*/
+}
+
+.presentacion__enlaces__subtitulo{  /* cambiar fuente, tamaño y otros de accede a mis redes*/
+    font-family: "krona one" , sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    
 
 
+}
 
+
+.presentacion__enlaces__link:hover{
+
+    background-color: #272727;
+    /*border: 2px solid #f00909;
+    font-size: 18px;
+    padding: 3%*/
 }
 
  /*span{                           /*  span para cambiar color a un texto o parte  de este y otras propiedades.   

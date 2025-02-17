@@ -66,22 +66,22 @@ body {
 
 .presentacion__contenido {
 
-   width: 615px;                /* ajusta el ancho de los elementos*/
+   width: 38.43rem;                /* ajusta el ancho de los elementos*/
    display: flex;               /* para separar los elementos */                
    flex-direction: column;      /* para que quede en colunmas y no en fila*/
-   gap: 40px;                  /* genera los espacios entre los elemento, titulo - parrafo - botones */
+   gap: 2.5rem;                  /* genera los espacios entre los elemento, titulo - parrafo - botones */
 
 }
 
 .presentacion__contenido__titulo {
     font-family:var(--fuente-krona);
-    font-size: 36px;                       /* cambia el tamaño de la fuente */
+    font-size: 2.25rem;                       /* cambia el tamaño de la fuente */
 }
 
 
 .presentacion__contenido__texto{
     font-family: var(--fuente-motserra);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .presentacion__enlaces{
@@ -90,31 +90,31 @@ body {
     justify-content: space-between;
     flex-direction: column;            /*se cambio a columna la posicion de los botones*/
     align-items: center;               /*central al centro ya que se cambio a columna*/
-    gap: 32px;
+    gap: 2rem;
 }
 
 .presentacion__enlaces__link{
     
-    width: 378px;                         /* anchura del boton */     
+    width: 23.62rem;                         /* anchura del boton */     
     /* background-color: #22D4FD;       /*Cambiar el fondo del boton - pero se quito por que los botones ahora no van a tener este color*/  
     text-align: center;                /* Alinear el texto en el boton */
-    padding: 21.5px 0px;     /* colocar el valor del padding de los botones alto y ancho */
-    border-radius: 8px;     /* redondear boton*/
+    padding: 1.34rem 0rem;     /* colocar el valor del padding de los botones alto y ancho */
+    border-radius: 0.5rem;     /* redondear boton*/
     font-family: var(--fuente-motserra), serif;   /* cambiar la fuente del texto */
-    font-size: 24px;      /* tamaño de la fuente */
-    font-weight: 600px;     /* monserrat peso 600 */
+    font-size: 1.5rem;      /* tamaño de la fuente */
+    font-weight: 37.5rem;     /* monserrat peso 600 */
     text-decoration: none;   /* no decoraciones en el texto ________ */
     color: var(--color-secundario);
-    border: 2px solid var(--color-terciario);
+    border: 0.12rem solid var(--color-terciario);
     display: flex;                    /*para alinear el icono con el texto, este queda alineado pero a la izquierda */
     justify-content: center;              /* ahora centrara el texto en el boton */
-    gap: 10px;                           /* para separar un poco el texto del boton */
+    gap: 0.62rem;                           /* para separar un poco el texto del boton */
    /* padding-left: 250px             /* una prueba usando el padding centro el texto y el icono*/
 }
 
 .presentacion__enlaces__subtitulo{  /* cambiar fuente, tamaño y otros de accede a mis redes*/
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     
 
@@ -133,11 +133,11 @@ body {
 .footer{
 
     background-color: var(--color-terciario);
-    padding: 24px;
+    padding: 1.5rem;
     color: var(--color-primario);
     text-align: center;
     font-family:var(--fuente-motserra) ;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -150,7 +150,7 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 }
 .header__menu__link{      /*cambiar propiedades de los botones de los encabezados*/
     font-family: var(--fuente-motserra);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
@@ -172,7 +172,7 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 
 
     display: flex;
-    gap: 80px;                      /* para separar los botones   */
+    gap: 5rem;                      /* para separar los botones   */
 
     /*justify-content: center;
     align-items: center;*/

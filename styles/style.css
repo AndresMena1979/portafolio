@@ -6,6 +6,7 @@
 --color-primario: #000000;                    /*declaracion de varaibles */
 --color-secundario: #f6f6f6;
 --color-terciario: #22D4FD;
+--color-hover:#272727;
 
 --fuente-motserra: "Montserrat", serif;
 --fuente-krona: "Krona One", serif;
@@ -25,8 +26,8 @@
 
 body {
 
-    background-color:#050505 ;
-    color : #ffffff;
+    background-color: var(--color-primario) ;
+    color : var(--color-secundario);
    /* height: 100vh;   /* para que ocupe toda la pantalla del navegador V=viewport ---se omite por que ahora esta el footer y el header*/
     box-sizing: border-box; /* para que un elemento hijo no se salga del elemento padre  */
    
@@ -40,14 +41,14 @@ body {
 
 .titulo-destaque{            /* strong class para cambiar color a un texto o parte de este  en html */ 
 
-    color: #22D4FD;   
+    color: var(--color-terciario);   
 }
 
 
 
  stronge{                     /* stronge para cambiar color de parte del titulo */
 
-    color: #22D4FD;
+    color: var(--color-terciario);
  } 
 
 
@@ -73,13 +74,13 @@ body {
 }
 
 .presentacion__contenido__titulo {
-    font-family: "Krona One", serif;
+    font-family:var(--fuente-krona);
     font-size: 36px;                       /* cambia el tamaño de la fuente */
 }
 
 
 .presentacion__contenido__texto{
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-motserra);
     font-size: 24px;
 }
 
@@ -99,12 +100,12 @@ body {
     text-align: center;                /* Alinear el texto en el boton */
     padding: 21.5px 0px;     /* colocar el valor del padding de los botones alto y ancho */
     border-radius: 8px;     /* redondear boton*/
-    font-family: "Montserrat", serif;   /* cambiar la fuente del texto */
+    font-family: var(--fuente-motserra), serif;   /* cambiar la fuente del texto */
     font-size: 24px;      /* tamaño de la fuente */
     font-weight: 600px;     /* monserrat peso 600 */
     text-decoration: none;   /* no decoraciones en el texto ________ */
-    color: #f6f6f6;
-    border: 2px solid #22D4FD;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     display: flex;                    /*para alinear el icono con el texto, este queda alineado pero a la izquierda */
     justify-content: center;              /* ahora centrara el texto en el boton */
     gap: 10px;                           /* para separar un poco el texto del boton */
@@ -112,7 +113,7 @@ body {
 }
 
 .presentacion__enlaces__subtitulo{  /* cambiar fuente, tamaño y otros de accede a mis redes*/
-    font-family: "krona one" , sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;
     font-weight: 400;
     
@@ -123,7 +124,7 @@ body {
 
 .presentacion__enlaces__link:hover{
 
-    background-color: #272727;
+    background-color: var(--color-hover);
     /*border: 2px solid #f00909;
     font-size: 18px;
     padding: 3%*/
@@ -131,11 +132,11 @@ body {
 
 .footer{
 
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     padding: 24px;
-    color: #000000;
+    color: var(--color-primario);
     text-align: center;
-    font-family:"Montserrat", serif ;
+    font-family:var(--fuente-motserra) ;
     font-size: 24px;
     font-weight: 400;
 }
@@ -146,10 +147,10 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 
 }
 .header__menu__link{      /*cambiar propiedades de los botones de los encabezados*/
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-motserra);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--color-terciario);
     text-decoration: none;
    /* margin: 0 10px;              /*tambien se puede generar espacio entre los botones si no se usa el Gap */
    /* padding: 10px 15px; */
@@ -159,7 +160,7 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 }
 
 .encabezado__menu__link:hover {
-    color: #007bff;
+    color: var(--color-terciario);
 }
 
 .header__menu{

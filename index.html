@@ -4,11 +4,18 @@
     <meta charset="UTF-8"> <!--caracteres usados a nivel mundial-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adapta a dispositivos mobiles-zoom-->
     <title>Portafolio</title>                <!--Titulo de la ceja de la pagina-->
-    <link rel="stylesheet" href="style.css"> <!--llamado del css-->
+    <link rel="stylesheet" href="./styles/style.css"> <!--llamado del css-->
 </head>
 <body>
 
-    <header><ul> File Edit View Help</header>  <!--Para colocar menu-->
+    <header class="header">
+      <nav class="header__menu">  
+    <a class="header__menu__link" href="index.html"> Home</a>     <!--crea el boton y accede a la pagina index.html-->
+    <a class="header__menu__link" href="about.html">Sobre Mi</a>  <!--crea el boton y accede a la pagina about.html.html-->
+    
+    </nav>
+
+    </header>  <!--Para colocar menu-->
 
     <main class="presentacion">
         <section class="presentacion__contenido">                                  <!--para hacer una seleccion-->
@@ -38,7 +45,7 @@
 
     <footer>
       
-        contacto: afmg1979@gmail.com Cel: 314 427 7224              <!--pie de pagina-->
+       <p class="footer"> Desarrollado por Alula Latam </p>             <!--pie de pagina-->
 
     </footer>
 

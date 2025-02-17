@@ -1,6 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+
+--color-primario: #000000;                    /*declaracion de varaibles */
+--color-secundario: #f6f6f6;
+--color-terciario: #22D4FD;
+
+--fuente-motserra: "Montserrat", serif;
+--fuente-krona: "Krona One", serif;
+
+}
+
 *{                                         /* para hacer un cambio universal- box model */
 
    padding:0;
@@ -16,7 +27,7 @@ body {
 
     background-color:#050505 ;
     color : #ffffff;
-    height: 100vh;   /* para que ocupe toda la pantalla del navegador V=viewport */
+   /* height: 100vh;   /* para que ocupe toda la pantalla del navegador V=viewport ---se omite por que ahora esta el footer y el header*/
     box-sizing: border-box; /* para que un elemento hijo no se salga del elemento padre  */
    
 }
@@ -46,7 +57,8 @@ body {
 
     display: flex;
     align-items: center;                   /* alinea elementos al centro*/
-    margin: 10% 15%;                            /*crea una distancia entre los elementos y la orilla de la pagina */
+  /* margin: 10% 15%;                      /* se reemplaza margin por padding */
+   padding: 6% 15%;                           /*crea una distancia entre los elementos y la orilla de la pagina */
     justify-content: space-between;        /*crea una distancia entre los elementos dentro de presentacion */ 
 
  }
@@ -117,6 +129,48 @@ body {
     padding: 3%*/
 }
 
+.footer{
+
+    background-color: #22D4FD;
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-family:"Montserrat", serif ;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header{
+
+padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
+
+}
+.header__menu__link{      /*cambiar propiedades de los botones de los encabezados*/
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+   /* margin: 0 10px;              /*tambien se puede generar espacio entre los botones si no se usa el Gap */
+   /* padding: 10px 15px; */
+   /* text-decoration: none;*/
+    
+
+}
+
+.encabezado__menu__link:hover {
+    color: #007bff;
+}
+
+.header__menu{
+
+
+    display: flex;
+    gap: 80px;                      /* para separar los botones   */
+
+    /*justify-content: center;
+    align-items: center;*/
+}
  /*span{                           /*  span para cambiar color a un texto o parte  de este y otras propiedades.   
      
      color: #22D4FD;

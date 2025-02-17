@@ -141,6 +141,8 @@ body {
     font-weight: 400;
 }
 
+
+
 .header{
 
 padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
@@ -152,6 +154,7 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
+    
    /* margin: 0 10px;              /*tambien se puede generar espacio entre los botones si no se usa el Gap */
    /* padding: 10px 15px; */
    /* text-decoration: none;*/
@@ -159,8 +162,10 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 
 }
 
-.encabezado__menu__link:hover {
-    color: var(--color-terciario);
+.header__menu__link:hover {
+    /*color: var(--color-terciario);*/
+    background-color: var(--color-hover); /* Usa varaible hover para cambia el color del boton cuando el puntero del mouese se posicione encima */
+    
 }
 
 .header__menu{

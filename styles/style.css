@@ -61,12 +61,14 @@ body {
   /* margin: 10% 15%;                      /* se reemplaza margin por padding */
    padding: 6% 15%;                           /*crea una distancia entre los elementos y la orilla de la pagina */
     justify-content: space-between;        /*crea una distancia entre los elementos dentro de presentacion */ 
+    gap: 82px;                            /*para separar mas el texto de la imagen*/
+
 
  }
 
 .presentacion__contenido {
 
-   width: 38.43rem;                /* ajusta el ancho de los elementos*/
+   width: 50%;                /* ajusta el ancho de los elementos- se uso % para que se adapte al cambio de dispositivo*/
    display: flex;               /* para separar los elementos */                
    flex-direction: column;      /* para que quede en colunmas y no en fila*/
    gap: 2.5rem;                  /* genera los espacios entre los elemento, titulo - parrafo - botones */
@@ -91,11 +93,12 @@ body {
     flex-direction: column;            /*se cambio a columna la posicion de los botones*/
     align-items: center;               /*central al centro ya que se cambio a columna*/
     gap: 2rem;
+    
 }
 
 .presentacion__enlaces__link{
     
-    width: 23.62rem;                         /* anchura del boton */     
+    width: 50%;                          /*23.62rem; - se cambio al % para que se adapte al cambio de pantalla en los dispositivos   /* anchura del boton */  
     /* background-color: #22D4FD;       /*Cambiar el fondo del boton - pero se quito por que los botones ahora no van a tener este color*/  
     text-align: center;                /* Alinear el texto en el boton */
     padding: 1.34rem 0rem;     /* colocar el valor del padding de los botones alto y ancho */
@@ -129,6 +132,14 @@ body {
     font-size: 18px;
     padding: 3%*/
 }
+
+.presentacion__imagen {
+
+    width: 50%;
+}
+
+
+
 
 .footer{
 
@@ -176,6 +187,33 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 
     /*justify-content: center;
     align-items: center;*/
+}
+
+
+@media(max-width: 1200px){                        /* para que cambie de presentacion cuando se llegue a esa resolucion*/
+.header{
+
+    padding: 10%;
+}
+
+
+.header__menu{
+
+    justify-content: center;
+}
+
+.presentacion {
+
+    flex-direction: column-reverse;                  /* para hacer que la foto quede alcontario, en este caso arriba*/
+    padding: 5%;                                   /*se dismiye el padding para que se adapte a la resolucion de la pantalla pequeña*/
+}
+
+
+.presentacion__contenido{
+
+    width: auto;                               /* se coloca en auto, para que se adapte a la resolucion de la pantalla pequeña*/
+}
+
 }
  /*span{                           /*  span para cambiar color a un texto o parte  de este y otras propiedades.   
      

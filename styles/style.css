@@ -136,6 +136,7 @@ body {
 .presentacion__imagen {
 
     width: 50%;
+   transition: opacity 0.5s;     /* crea una transiccion mas suave cuando se cambia la opacidad con el :hover-- opacity: 0.5; */
 }
 
 
@@ -190,6 +191,15 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
 }
 
 
+
+.presentacion__imagen:hover{
+
+  opacity: 0.5;                     /* cambia la opacidad de la foto cuando se pasa el cursor por ensima-funciona junto con transition: opacity 0.5s;
+  */
+
+}
+
+
 @media(max-width: 1200px){                        /* para que cambie de presentacion cuando se llegue a esa resolucion*/
 .header{
 
@@ -214,7 +224,11 @@ padding:  2% 0% 0% 15%; /* Para darle padding a los botones*/
     width: auto;                               /* se coloca en auto, para que se adapte a la resolucion de la pantalla pequeña*/
 }
 
+
+
 }
+
+
  /*span{                           /*  span para cambiar color a un texto o parte  de este y otras propiedades.   
      
      color: #22D4FD;
